@@ -1,0 +1,44 @@
+seed: 42
+
+languages:
+  ta: Tamil
+  hi: Hindi
+  sa: Sanskrit
+  fa: Persian
+  ar: Arabic
+  pt: Portuguese
+  en: English
+
+target_labels:
+  - Tamil
+  - Hindi
+  - Sanskrit
+  - Persian
+  - Arabic
+  - Portuguese
+  - English
+  - native
+
+other_label: other
+min_class_count: 500
+min_word_len: 2
+max_word_len: 40
+
+split:
+  train: 0.70
+  val: 0.15
+  test: 0.15
+
+transformer:
+  primary: google/muril-base-cased
+  secondary: xlm-roberta-base
+  max_len: 32
+  epochs: 4
+  batch_size: 32
+  lr: 2.0e-5
+
+neural:
+  epochs: 25
+  batch_size: 64
+  lr: 1.0e-3
+  patience: 4

@@ -1,0 +1,5 @@
+model,tamil_rows,tamil_accuracy
+baseline_native,2385,0.5459119496855346
+baseline_translit,2385,0.4914046121593291
+cnn_native,2385,0.5731656184486373
+cnn_translit,2385,0.4767295597484277

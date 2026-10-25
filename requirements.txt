@@ -1,0 +1,17 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+networkx
+umap-learn
+pyyaml
+tqdm
+requests
+torch
+transformers>=4.40
+sentencepiece
+indic-transliteration>=2.3
+Unidecode
+streamlit
+joblib
